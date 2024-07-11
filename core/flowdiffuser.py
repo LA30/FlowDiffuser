@@ -80,7 +80,7 @@ class FlowDiffuser(nn.Module):
             self.update_dfm = SKUpdateDFM(self.args, hidden_dim=c_dim)
 
             timesteps = 1000
-            sampling_timesteps = 3
+            sampling_timesteps = 4
             recurr_itrs = 6
             print(' -- denoise steps: %d \n' % sampling_timesteps)
             print(' -- recurrent iterations: %d \n' % recurr_itrs)
