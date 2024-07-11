@@ -35,8 +35,9 @@ matplotlib  3.3.4
 
 1. Download [Sintel](http://sintel.is.tue.mpg.de/) and [KITTI](http://www.cvlibs.net/datasets/kitti/eval_scene_flow.php?benchmark=flow) dataset, and set the root path of each class in `./core/datasets.py`.
 
+2. Put `*.pth` file ([GoogleDrive](https://drive.google.com/file/d/1msAB8-ibMCTUEQbT6yjV1y13D_-6LTSX/view?usp=sharing)) into folder `./weights`.
 
-2. Evaluation on Sintel and KITTI
+3. Evaluation on Sintel and KITTI
 ```Shell
 ./eval.sh
 ```
