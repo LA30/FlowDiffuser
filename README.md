@@ -17,4 +17,49 @@ Optical flow estimation, a process of predicting pixel-wise displacement between
 ![comparison](https://github.com/LA30/FlowDiffuser/assets/47421121/5463a1a7-c9bd-4596-afe5-d5b0c0ed7b40)
 
 
-## Code coming soon
+## Requirements
+
+Python 3.8 with following packages
+```Shell
+pytorch  1.9.0
+torchvision  0.10.0
+numpy  1.19.5
+opencv-python  4.6.0.66
+timm  0.6.12
+scipy  1.5.4
+matplotlib  3.3.4
+```
+
+
+## Usage
+
+1. Download [Sintel](http://sintel.is.tue.mpg.de/) and [KITTI](http://www.cvlibs.net/datasets/kitti/eval_scene_flow.php?benchmark=flow) dataset, and set the root path of each class in `./core/datasets.py`.
+
+
+2. Evaluation on Sintel and KITTI
+```Shell
+./eval.sh
+```
+
+
+## Q & A
+
+Due to some changes in my job, I am busy with other matters. If you have any questions, please email me at aoluo@swjtu.edu.cn. I will respond to you at my earliest convenience.
+
+
+## Citation
+
+If you think this work is helpful, please cite
+```
+@inproceedings{luo2024flowdiffuser,
+  title={FlowDiffuser: Advancing Optical Flow Estimation with Diffusion Models},
+  author={Luo, Ao and Li, Xin and Yang, Fan and Liu, Jiangyu and Fan, Haoqiang and Liu, Shuaicheng},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={19167--19176},
+  year={2024}
+}
+```
+
+## Acknowledgement
+
+The code is built based on [RAFT](https://github.com/princeton-vl/RAFT), [SKFlow](https://github.com/littlespray/SKFlow), [DiffusionDet](https://github.com/ShoufaChen/DiffusionDet), and [EMD-Flow](https://github.com/gddcx/EMD-Flow). We thank the authors for their contributions.
